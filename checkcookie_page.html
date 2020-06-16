@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8" />
+		<title>Проверка поддержки Cookie</title>
+	</head>
+	<body>
+		<button onclick = "start_checking()">Проверить</button>
+		<iframe id = "check-frame"></iframe>
+	</body>
+	<script>
+		function start_checking() {
+			var check_frame = document.getElementById("check-frame");
+			check_frame.src = "";
+			check_frame.innerHTML = "";
+			check_frame.src = "check_cookie.php";
+		};
+	</script>
+</html>
